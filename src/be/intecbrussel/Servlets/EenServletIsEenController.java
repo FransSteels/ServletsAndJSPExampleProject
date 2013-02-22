@@ -20,7 +20,8 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/EenServletIsEenController")
 public class EenServletIsEenController extends HttpServlet {
 	
-	private static final long serialVersionUID = 1L;
+	private static
+	final long serialVersionUID = 1L;
 	
 	/*
 	 * Het is een goede gewoonte om de VIEW (een JSP) die gelinkt 
