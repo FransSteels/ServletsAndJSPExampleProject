@@ -1,14 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!DOCTYPE html>
 <html>
 <head>
+<link href="css/Fbs_home.css" rel="stylesheet" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>FBS</title>
 </head>
 <body>
-	<center>
-	<h1>${fbs_afkorting}</h1>
-	</center>
+
+		<div class="logo">
+	<a href="Fbs_home.html">
+	<img alt="home_logo" src="pics/fbs_logo.png">
+	</a>
+	</div>
+	
+	<div class="FBS">
+			<h1>${fbs_afkorting}</h1>
+	
+	</div>
+	
 </body>
 </html>

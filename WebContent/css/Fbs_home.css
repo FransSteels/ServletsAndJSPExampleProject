@@ -1,0 +1,52 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	border: none;
+}
+
+.logo {
+	background-color: white;
+	margin: 0 auto;
+	width: 530px;
+	height: 200px;
+}
+
+.FBS {
+	margin: 0 auto;
+	width: 530px;
+	height: 700px;
+}
+
+.FBS h1 {
+	font-family: sans-serif;
+	font-variant: small-caps;
+	text-align: center;
+}
+
+@media screen and (max-width:540px) {
+	body {
+		
+	}
+	.logo {
+		width: 250px;
+		height: 200px;
+	}
+	.logo a {
+		margin-left: 50px;
+	}
+	.logo a img {
+		height: 70%;
+	}
+	.FBS {
+		margin: 0 auto;
+		width: 250px;
+		height: 400px;
+		background-color: white;
+	}
+	.FBS h1 {
+	font-family: sans-serif;
+	font-variant: small-caps;
+	text-align: center;
+}
+	
+}
