@@ -1,52 +1,68 @@
 @CHARSET "ISO-8859-1";
 
-body {
-	border: none;
-}
-
 .logo {
 	background-color: white;
 	margin: 0 auto;
 	width: 530px;
 	height: 200px;
+	text-align: center;
 }
 
 .FBS {
 	margin: 0 auto;
 	width: 530px;
 	height: 700px;
+	background-color: white;
 }
 
-.FBS h1 {
+.FBS h2 {
 	font-family: sans-serif;
 	font-variant: small-caps;
 	text-align: center;
+	font-weight: 2em;
+}
+.FBS a {
+	display: block;
 }
 
-@media screen and (max-width:540px) {
-	body {
-		
-	}
-	.logo {
-		width: 250px;
-		height: 200px;
-	}
-	.logo a {
-		margin-left: 50px;
-	}
-	.logo a img {
-		height: 70%;
-	}
-	.FBS {
-		margin: 0 auto;
-		width: 250px;
-		height: 400px;
-		background-color: white;
-	}
-	.FBS h1 {
-	font-family: sans-serif;
-	font-variant: small-caps;
-	text-align: center;
+a.contact {
+	width: 240px;
+	height: 72px;
+	background-image: url("../pics_responsive/contact_fut.png");
 }
-	
+a.work {
+
+	width: 240px;
+	height: 72px;
+	background-image: url("../pics_responsive/work_fut.png");
 }
+
+a.work:HOVER {
+	background-image: url("../pics_responsive/work_fut.png");
+}
+
+a.about {
+
+	width: 240px;
+	height: 72px;
+	background-image: url("../pics_responsive/about_fut.png");
+}
+
+a.about:HOVER {
+	background-image: url("../pics_responsive/about_fut.png");
+}
+
+a.smiley {
+
+	width: 240px;
+	height: 72px;
+	background-image: url("../pics_responsive/normal_smiley_fut.png");
+}
+
+a.smiley:HOVER {
+	background-image: url("../pics_responsive/normal_smiley_fut.png");
+}
+
+
+
+
