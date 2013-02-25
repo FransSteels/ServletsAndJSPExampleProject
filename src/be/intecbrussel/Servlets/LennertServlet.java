@@ -2,20 +2,16 @@ package be.intecbrussel.Servlets;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Random;
 
-import javax.print.DocFlavor.INPUT_STREAM;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.sun.crypto.provider.DESParameters;
 
 /**
  * Servlet implementation class LennertServlet
@@ -44,13 +40,13 @@ public class LennertServlet extends HttpServlet {
 		RequestDispatcher rqdp = request.getRequestDispatcher(VIEW);
 		StringBuilder message = new StringBuilder();
 		Random rand = new Random();
-		int f = rand.nextInt(63)+1;
-		int b = rand.nextInt(193)+1;
-		int s = rand.nextInt(32)+1;
+		int f = rand.nextInt(63) + 1;
+		int b = rand.nextInt(193) + 1;
+		int s = rand.nextInt(32) + 1;
 
 		FileReader read = new FileReader(
 				new File(
-						"C:\\Users\\lennertg\\Documents\\GitHup\\ServletsAndJSPExampleProject\\WebContent\\textfiles\\f.txt"));
+						"C:\\Users\\lennertg\\Documents\\GitHup\\clones\\ServletsAndJSPExampleProject_1\\WebContent\\textfiles\\f2.txt"));
 		BufferedReader br = new BufferedReader(read);
 		int count = 0;
 		while (count != f) {
@@ -60,7 +56,7 @@ public class LennertServlet extends HttpServlet {
 		message.append(br.readLine());
 		read = new FileReader(
 				new File(
-						"C:\\Users\\lennertg\\Documents\\GitHup\\ServletsAndJSPExampleProject\\WebContent\\textfiles\\b.txt"));
+						"C:\\Users\\lennertg\\Documents\\GitHup\\clones\\ServletsAndJSPExampleProject_1\\WebContent\\textfiles\\b2.txt"));
 		br = new BufferedReader(read);
 		count = 0;
 		while (count != b) {
@@ -70,7 +66,7 @@ public class LennertServlet extends HttpServlet {
 		message.append(" " + br.readLine());
 		read = new FileReader(
 				new File(
-						"C:\\Users\\lennertg\\Documents\\GitHup\\ServletsAndJSPExampleProject\\WebContent\\textfiles\\s.txt"));
+						"C:\\Users\\lennertg\\Documents\\GitHup\\clones\\ServletsAndJSPExampleProject_1\\WebContent\\textfiles\\s2.txt"));
 		br = new BufferedReader(read);
 		count = 0;
 		while (count != s) {

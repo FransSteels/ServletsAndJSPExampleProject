@@ -18,9 +18,9 @@
 		
 	<div class="FBS">
 	
-		<h2>${fbs_afkorting}</h2>
+		<div class="h1">${fbs_afkorting}</div>
 			
-		<a href="about.html" class="about"></a>
+		<a href="WebContent/WEB-INF/about.html" class="about"></a>
 		<a href="contact.html" class="contact"></a> 
 		<a href="woerk.html" class="work"></a>
 		<a href="smiley.html" class="smiley"></a>
